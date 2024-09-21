@@ -1,0 +1,25 @@
+/* Override Bootstrap link styling in the footer */
+footer a {
+    color: white !important; /* Ensure link color remains white */
+    text-decoration: none !important; /* Remove underline */
+  }
+  
+  footer a:hover {
+    color: #ddd !important; /* Change color on hover */
+    text-decoration: none !important; /* Ensure no underline on hover */
+  }
+  
+  footer .list-inline-item {
+    margin: 0 15px;
+  }
+  
+  footer .footer-divider {
+    border-color: #444; /* Line above the copyright */
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  footer p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
