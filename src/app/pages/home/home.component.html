@@ -1,20 +1,26 @@
-<div class="container text-center my-5 py-5 bg-light rounded">
-    <h1 class="display-4">Welcome to Trading Moon</h1>
-    <p class="lead">Your gateway to mastering trading strategies.</p>
-    <a routerLink="/blog" class="btn btn-primary btn-lg">Read our Blog</a>
+<div class="container hero-img">
+  <div class="hero-section">
+    <div class="hero-content text-center">
+      <h1>Welcome to Trading Moon</h1>
+      <p>Your gateway to mastering trading strategies.</p>
+      <a routerLink="/blog" class="btn btn-primary btn-lg">Explore Blog</a>
+    </div>
   </div>
-  
-  <div class="container">
-    <h2 class="my-4">Latest Posts</h2>
-    <div class="row">
-      <div class="col-md-6" *ngFor="let post of posts">
-        <div class="card mb-4 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">{{ post.title }}</h5>
-            <p class="card-text">{{ post.description }}</p>
-            <a [routerLink]="['/blog', post.id]" class="btn btn-outline-primary">Read More</a>
-          </div>
+</div>
+
+
+<div class="container my-5">
+  <h2 class="section-title text-center">Latest Posts</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4" *ngFor="let post of posts">
+      <div class="card h-100">
+        <img [src]="post.image" class="card-img-top" alt="{{ post.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ post.title }}</h5>
+          <p class="card-text">{{ post.description }}</p>
+          <a [routerLink]="['/blog', post.id]" class="btn btn-outline-primary">Read More</a>
         </div>
       </div>
     </div>
   </div>
+</div>

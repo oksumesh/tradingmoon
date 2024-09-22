@@ -1,0 +1,47 @@
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content spacing */
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    height: 100%; /* Makes all cards the same height */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* Fills up remaining space in the card */
+    padding: 20px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    flex-grow: 1; /* Allows the description to expand and push the button down */
+    color: #666;
+  }
+  
+  .card-body a {
+    margin-top: 10px;
+    align-self: start; /* Ensures button remains aligned to the start */
+  }

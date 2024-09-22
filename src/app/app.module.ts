@@ -23,7 +23,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     AdminDashboardComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

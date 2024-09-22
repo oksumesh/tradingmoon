@@ -13,12 +13,6 @@ h1 {
     line-height: 1.8;
   }
   
-  ul {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-left: 20px;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
+  .container {
+    max-width: 1000px;
   }

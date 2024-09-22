@@ -1,25 +1,67 @@
-/* Override Bootstrap link styling in the footer */
-footer a {
-    color: white !important; /* Ensure link color remains white */
-    text-decoration: none !important; /* Remove underline */
+.footer {
+  padding: 20px 0;
+  font-size: 0.875rem;
+  color: #666;
+  border-top: 1px solid #eaeaea;
+  width: 100%; /* Ensure the footer takes the full width of the screen */
+  box-sizing: border-box; /* Make sure padding is included in the element's total width */
+}
+
+.container {
+  margin: 0 auto; /* Center the footer container */
+  padding: 0 15px; /* Add padding to ensure space on smaller screens */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures that the content wraps on smaller screens */
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px; /* Space between links */
+  flex-wrap: wrap; /* Wrap links to new lines on smaller screens */
+}
+
+.footer-links a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: none;
+}
+
+.footer-country {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  footer a:hover {
-    color: #ddd !important; /* Change color on hover */
-    text-decoration: none !important; /* Ensure no underline on hover */
-  }
-  
-  footer .list-inline-item {
-    margin: 0 15px;
-  }
-  
-  footer .footer-divider {
-    border-color: #444; /* Line above the copyright */
-    width: 80%;
-    margin: 20px auto;
-  }
-  
-  footer p {
+
+  .footer-links {
     margin-top: 10px;
-    font-size: 14px;
+    justify-content: center; /* Center links on smaller screens */
   }
+
+  .footer-country {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 15px 0;
+  }
+
+  .footer .container {
+    padding: 0 10px; /* Reduce padding for very small screens */
+  }
+}
